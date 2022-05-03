@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IP Gimn. Birnova</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="images/icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+    <div id="menu-btn" onclick="menu()">
+        <i id="hamburger" class="fas fa-bars"></i>
+        <i id="close" class="fas fa-times hidden"></i>
+    </div>
+
+    <navbar id="side-menu">
+        <div id="menu-logo">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        <a href="#despre" onclick="menu()">Despre noi</a>
+        <a href="" onclick="menu()">Noutăți</a>
+        <a href="html/orar.html" onclick="menu()">Orar</a>
+        <a href="" onclick="menu()">Merite</a>
+        <a href="" onclick="menu()">Galerie</a>
+        <a href="" onclick="menu()">Contacte</a>
+    </navbar>
+
+    <main id="main">
+        <section id="intro">
+            <div id="intro-content">
+                <h1 data-aos="zoom-in">Gimnaziul Birnova</h1>
+                <a data-aos="zoom-in" data-aos-delay="500" href="#despre">Află mai mult</a>
+            </div>
+        </section>
+
+        <section id="despre">
+            <div class="centered" data-aos="fade-up">
+                <h1>Despre noi</h1>
+                <p>
+                    Inființată în 1967, școala deja de 54 de ani funcționează.
+                    În colectivul de profesori sunt 22 de cadre didactice, iar elevi sunt în total 154.
+
+
+                </p>
+                <q>Veni vidi vici</q>
+
+                <div class="cards">
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="300">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Calitate</h3>
+                    </div>
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="600">
+                        <i class="fas fa-book"></i>
+                        <h3>Dedicație</h3>
+                    </div>
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="900">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Profesionalism</h3>
+                    </div>
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="1200">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Siguranță</h3>
+                    </div>
+
+                </div>
+                <h1 div='titlu'>Lista de discipline</h1>
+
+                <ul>
+                    <li>Limba și literatura română</li>
+                    <li>Limba franceză</li>
+                    <li>Limba Rusă</li>
+                    <li>Matematica</li>
+                    <li>Biologia</li>
+                    <li>Chimia</li>
+                    <li>Informatica</li>
+                    <li>Fizica</li>
+                    <li>Geografia</li>
+                    <li>Știința</li>
+                    <li>Istoria</li>
+                    <li>Educația tehnologică</li>
+                    <li>Educația fizică</li>
+                    <li>Educația civică</li>
+                    <li>Educația muzicală</li>
+                    <li>Educația plastică</li>
+                    <li>Proiectare și dezvoltare Web</li>
+                    <li>Dezvoltarea personală</li>
+                    <li>Religia</li>
+
+                </ul>
+
+            </div>
+        </section>
+
+        <section id="merite">
+            <div class="centered" data-aos="fade-up">
+                <h1>Merite</h1>
+                <i id="trofeu" class="fas fa-trophy" data-aos="flip-left" data-aos-delay="500"></i>
+
+
+                <div class="diploma">
+                    <img class="img" src="img/diploma.jpg" alt="ok">
+                    <img class="img" src="img/diploma2.jpg" alt="on">
+                    <img class="img" src="img/diploma3.jpg" alt="off">
+                    <img class="img" src="img/diploma4.jpg" alt="?">
+                    <img class="img" src="img/diploma5.jpg" alt="off">
+                    <img class="img" src="img/diploma4.jpg" alt="?">
+                    <img class="img" src="img/diploma5.jpg" alt="off">
+                </div>
+
+
+                <p>
+
+                </p>
+
+
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Participant în cadrul proiectului <i>Tekwill În Fiecare Școală</i>
+                </div>
+
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Locuri de frunte la olimpiada raională
+                </div>
+
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Locuri de frunte la olimpiada locală
+                </div>
+
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Voluntari activi în localitatea natală
+                </div>
+
+
+
+                <div class="slideshow">
+                    <div class="slide">
+                        <div class="nr-slide"> 1/3</div>
+                        <img src="images/scoala2.jpg" />
+                    </div>
+                    <div class="slide">
+                        <div class="nr-slide"> 2/3</div>
+                        <img src="images/scoala1.jpg" />
+                    </div>
+                    <div class="slide">
+                        <div class="nr-slide"> 3/3</div>
+                        <img src="images/scoala3.jpg" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d661.939428764936!2d27.52779326609269!3d48.42279560981793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47333c5643158075%3A0xaec6156d19bfff42!2sGimnaziul%20B%C3%AErnova!5e0!3m2!1sro!2s!4v1651563260461!5m2!1sro!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
