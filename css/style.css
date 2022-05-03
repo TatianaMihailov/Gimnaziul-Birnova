@@ -1,0 +1,239 @@
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    color: white;
+}
+
+main {
+    transition: all 0.3s;
+}
+
+main.inactive {
+    filter: grayscale(100%);
+}
+
+navbar > a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+navbar > a:hover {
+    color: rgb(151, 167, 231);
+    font-weight: bold;
+}
+.container{
+    border: solid 2px #62be52;
+    margin: 30px;
+    padding: 5px;
+    max-width: 1000px;
+    max-height: 625px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+section {
+    min-height: 100vh;
+    padding: 10px 17% 50px 17%;
+}
+
+#intro {
+    background-image: url("../images/birnova_elevi/gimnaziul_afara.JPG");
+    background-size: cover;
+    background-position: 35% 30%;
+    display: flex;
+    padding: 0px;
+}
+
+#intro-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(82, 82, 82, 0.25);
+}
+
+#intro-content > h1 {
+    font-size: 30px;
+    background-color: rgba(43, 55, 96, 0.75);
+    padding: 10px 15px;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(11, 11, 59);
+}
+
+#intro-content > a {
+    font-size: 22px;
+    color: white !important;
+    background-color: rgba(42, 160, 42, 0.75);
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid green;
+    backdrop-filter: blur(3px);
+}
+
+#intro-content > a:hover {
+    filter: contrast(170%);
+}
+
+#menu-btn {
+    font-size: 34px;
+    color: #7673f8;
+    position: fixed;
+    right: 35px;
+    top: 20px;
+    cursor: pointer;
+    background-color: rgba(150, 150, 150, 0.7);
+    padding: 3px 16px;
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 0.3s;
+}
+
+#menu-btn.nav {
+    right: 235px;
+}
+
+#menu-btn:hover {
+    opacity: 0.75;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#side-menu {
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    background-color: rgba(11, 16, 35, 0.85);
+    z-index: 2;
+    right: -200px;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+#side-menu.nav {
+    right: 0px;
+}
+
+#menu-logo {
+    font-size: 28px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+#despre {
+    background: radial-gradient( rgb(43, 55, 96), rgb(11, 16, 35)  );
+}
+
+.centered {
+    text-align: center;
+}
+
+q {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.cards {
+    margin-top: 30px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    height: 180px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+    border: 2px solid white;
+    border-radius: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.card > i {
+    color: rgb(54, 229, 54);
+    font-size: 80px;
+}
+
+#merite {
+    color: rgb(44, 44, 44);
+}
+
+#trofeu {
+    font-size: 80px;
+    color: gold;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.merit {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#merite  p {
+    margin-bottom: 30px;
+}
+
+.medalie {
+    color: gold;
+    font-size: 28px;
+    animation: rotire 2s infinite;
+}
+
+.slideshow {
+    margin-top: 30px;
+    border: 3px solid gray;
+    background-color: gray;
+    width: 70%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.slide {
+    height: inherit;
+    position:relative;
+    /* lucreaza si fara position:relative, dar mai bine de-l scris */
+}
+.nr-slide{
+    position:absolute;
+    /* left , top si alte pozitii lucreaza pentru ca e position absolute */
+    color:white;
+    background-color: rgba(50, 50, 50, 0.5);
+    left: 10px;
+    top:10px;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.slide img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+
+@keyframes rotire {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(360deg); }
+}
